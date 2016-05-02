@@ -1,0 +1,14 @@
+<Page loaded="pageLoaded">
+    <StackLayout>
+        <Button text="enable Location" tap="enableLocationTap"/>
+        <Button text="Get Current Location" tap="buttonGetLocationTap"/>
+        <StackLayout  orientation="horizontal">
+            <label text="lat"></label>
+            <label text="{{loc.latitude}}"></label>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+            <label text="long"></label>
+            <label text="{{loc.longitude}}"></label>
+        </StackLayout>
+    </StackLayout>
+</Page>

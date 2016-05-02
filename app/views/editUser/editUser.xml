@@ -1,0 +1,33 @@
+<page loaded="pageLoaded">
+    <ActionBar title="Users">
+        <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+    </ActionBar>
+    <ScrollView>
+        <StackLayout>
+            <StackLayout>
+                <label text="firstname"></label>
+                <TextField text="{{user.first_name}}"></TextField>
+            </StackLayout>
+            <StackLayout>
+                <label text="lastname"></label>
+                <TextField text="{{user.last_name}}"></TextField>
+            </StackLayout>
+            <StackLayout>
+                <label text="email"></label>
+                <TextField text="{{user.email}}"></TextField>
+            </StackLayout>
+            <StackLayout>
+                <label text="gender"></label>
+                <TextField text="{{user.gender}}"></TextField>
+            </StackLayout>
+            <StackLayout>
+                <label text="ip address"></label>
+                <TextField text="{{user.ip_address}}"></TextField>
+            </StackLayout>
+            <StackLayout orientation="horizontal">
+                <button text="update" class="update" tap="update"></button>
+                <button text="remove" class="remove" tap="remove"></button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</page>

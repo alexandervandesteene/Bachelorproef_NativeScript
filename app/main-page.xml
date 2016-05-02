@@ -1,0 +1,18 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Users">
+        <ActionBar.actionItems>
+            <ActionItem ios.systemIcon="1" android.systemIcon="ic_menu_mylocation" ios.position="right" tap="goToLocation"/>
+            <ActionItem ios.systemIcon="4" android.systemIcon="ic_menu_invite" ios.position="right" tap="addUsers"/>
+        </ActionBar.actionItems>
+    </ActionBar>
+    <ListView items="{{ users }}" itemTap="getInfo">
+        <ListView.itemTemplate class="listItem">
+            <StackLayout orientation="horizontal">
+                <Image src="https://cdn1.iconfinder.com/data/icons/social-messaging-productivity-1/128/profile2-128.png"/>
+                <label text="{{first_name}}" class="fistname"></label>
+                <label text="{{last_name}}"></label>
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+
+</Page>

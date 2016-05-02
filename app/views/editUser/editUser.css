@@ -1,0 +1,15 @@
+.update{
+    font: 12;
+    width: 50%;
+    height: 50;
+    background-color: green;
+    color: white;
+}
+
+.remove{
+    font: 12;
+    width: 50%;
+    height: 50;
+    background-color: coral;
+    color: white;
+}

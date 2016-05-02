@@ -1,0 +1,15 @@
+{
+	"nativescript": {
+		"id": "org.nativescript.location",
+		"tns-ios": {
+			"version": "1.7.0"
+		},
+		"tns-android": {
+			"version": "1.7.1"
+		}
+	},
+	"dependencies": {
+		"nativescript-geolocation": "0.0.9",
+		"tns-core-modules": "1.7.1"
+	}
+}
